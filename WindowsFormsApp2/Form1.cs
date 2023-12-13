@@ -36,13 +36,17 @@ namespace WindowsFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
             // check when checkbox is checked
+
+            String male = $"You pressed {rdMale.Text}";
+            String female = $"You pressed {rdFemale.Text}";
+
             if (rdMale.Checked)
             {
-                MessageBox.Show("You pressed male");
+                MessageBox.Show(male);
             }
             else if (rdFemale.Checked)
             {
-                MessageBox.Show("You pressed female");
+                MessageBox.Show(female);
             }
         }
 
@@ -50,7 +54,6 @@ namespace WindowsFormsApp2
         {
             String gender = "";
             // add item to data grid view
-            DataGridView dataGridView = dataGridView1;
 
             if (rdMale.Checked)
             {
@@ -61,7 +64,7 @@ namespace WindowsFormsApp2
                 gender = rdFemale.Text;
             }
 
-            dataGridView.Rows.Add(gender, txtFirstname.Text, txtLastname.Text, txtPhone.Text, txtEmail.Text, txtFacebook.Text, dtDob.Text);
+            dataGridView1.Rows.Add(gender, txtFirstname.Text, txtLastname.Text, txtPhone.Text, txtEmail.Text, txtFacebook.Text, dtDob.Text);
 
         }
 
