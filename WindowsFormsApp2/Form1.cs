@@ -61,7 +61,7 @@ namespace WindowsFormsApp2
                 gender = rdFemale.Text;
             }
 
-            dataGridView.Rows.Add(gender, txtFirstname.Text, txtLastname.Text, txtPhone.Text, dtDob.Text);
+            dataGridView.Rows.Add(gender, txtFirstname.Text, txtLastname.Text, txtPhone.Text, txtEmail.Text, txtFacebook.Text, dtDob.Text);
 
         }
 
